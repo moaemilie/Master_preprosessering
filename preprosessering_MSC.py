@@ -127,6 +127,7 @@ def sample_mean_spectra(directory, side, brick_nr):
 
 
 # Code for MSC found at: https://towardsdatascience.com/scatter-correction-and-outlier-detection-in-nir-spectroscopy-7ec924af668
+# Created by Shravankumar Hiregoudar
 
 def msc(input_data, reference=None):
     """
@@ -157,7 +158,7 @@ def msc(input_data, reference=None):
 
 # Here the functions above are used, first to preprosess the images without MSC, and then MSC is performed on the spectra.
 
-def get_MSC_prepross(bricks_nr, sides, directories):
+def get_MSC_prepross(directories, sides, bricks_nr):
 
     # First all but MSC preprosessing is used and stored in a dataframe
     Represent_grid = []
